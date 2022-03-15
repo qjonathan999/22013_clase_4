@@ -1,4 +1,4 @@
-class Persona{
+export default class Persona{
     constructor(nombre,apellido,edad,altura){
         this.nombre=nombre
         this.apellido=apellido
@@ -6,7 +6,7 @@ class Persona{
         this.altura=altura
     }
     saludar(){
-        console.log(`Hola, mi nombre es: ${this.nombre}`)
+        return `Hola, mi nombre es: ${this.nombre}`
     }
     soyAlto(){
         return this.altura>1.80
